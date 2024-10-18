@@ -1,0 +1,144 @@
+:root {
+  --bg-dark: #0d0d0d;
+  --color: #f43200;
+}
+body {
+  background-color: var(--bg-dark);
+  line-height: 1.3;
+  color: #fff;
+  position: relative;
+}
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Firefox */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("../../public/SFMono-Regular.otf");
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("../../public/Calibre-Regular.otf");
+}
+@font-face {
+  font-family: "CalibreB";
+  src: url("../../public/Calibre-Medium.otf");
+}
+.list li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 1em;
+  height: 1em;
+  background-image: url("../../public/Hashtag.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+.list li {
+  position: relative;
+}
+li {
+  font-family: "SF Mono";
+  color: #fff;
+  font-size: 13px;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+.link {
+  position: relative;
+  display: inline-block;
+  color: var(--color);
+  line-height: 90%;
+  cursor: pointer;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  background-color: var(--color);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+.section-header {
+  color: #fff;
+  font-family: "CalibreB";
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.section-header::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: gray;
+}
+.nums-header {
+  color: var(--color);
+  font-family: "SF Mono";
+  padding-top: 6px;
+}
+.nums-content {
+  color: var(--color);
+  font-family: "SF Mono";
+  padding-top: 6px;
+  font-size: 20px;
+}
+.animated-elm {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.animated-elm:hover {
+  transform: translateY(-5px);
+  color: var(--color);
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+      width: 75%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+      width: 85%;
+    }
+}
