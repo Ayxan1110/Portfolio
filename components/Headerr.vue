@@ -1,7 +1,9 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
+const isVisible = ref(true)
+let lastScrollY = window.scrollY
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -10,11 +12,26 @@ const toggleMenu = () => {
 const closeMenu = () => {
   isMenuOpen.value = false
 }
+
+const handleScroll = () => {
+  const currentScrollY = window.scrollY
+  isVisible.value = currentScrollY < lastScrollY || currentScrollY <= 0
+  lastScrollY = currentScrollY
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
+
 <template>
-  <nav>
-    <div class="header-nav flex justify-between items-center">
+  <nav :class="['header-nav', { 'fade-out': !isVisible }]">
+    <div class="header-nav-content flex justify-between items-center">
       <div class="header-logo">
         <Logo />
       </div>
@@ -46,9 +63,7 @@ const closeMenu = () => {
             <a href="#about"><span class="nums-header">01.</span> About</a>
           </li>
           <li class="nav-section" @click="closeMenu">
-            <a href="#experience"
-              ><span class="nums-header">02.</span> Experience</a
-            >
+            <a href="#experience"><span class="nums-header">02.</span> Experience</a>
           </li>
           <li class="nav-section" @click="closeMenu">
             <a href="#projects"><span class="nums-header">03.</span> Work</a>
@@ -64,7 +79,31 @@ const closeMenu = () => {
     </div>
   </nav>
 </template>
+
 <style scoped>
+.header-nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  background-color: var(--bg-dark);
+  box-shadow: 0 4px 6px -6px var(--color);
+}
+
+.fade-out {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.header-nav-content {
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-icon {
   width: 35px;
   height: 30px;
@@ -81,20 +120,18 @@ const closeMenu = () => {
   width: 100%;
   border-radius: 5px;
 }
+
 .nav-section {
   font-family: "SF Mono";
   color: #fff;
   font-size: 14px;
 }
+
 .nav-section:hover {
-  transition-duration: .3s;
-  color: var(--color);
+  transition-duration: 0.3s;
+  color: var(--color)
 }
-.resume-btn:hover {
-  outline: none;
-  box-shadow: 4px 4px 0 0 var(--color);
-  transform: translate(-5px, -5px);
-}
+
 .resume-btn {
   border: 1.5px solid var(--color);
   border-radius: 5px;
@@ -104,13 +141,14 @@ const closeMenu = () => {
   color: var(--color);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.header-nav {
-  padding: 20px 48px;
-  -webkit-box-shadow: 0 4px 6px -6px var(--color);
-  -moz-box-shadow: 0 4px 6px -6px var(--color);
-  box-shadow: 0 4px 6px -6px var(--color);
+
+.resume-btn:hover {
+  outline: none;
+  box-shadow: 4px 4px 0 0 var(--color);
+  transform: translate(-5px, -5px);
 }
-.hamburger-menu{
+
+.hamburger-menu {
   display: none;
   position: fixed;
   top: 0;
@@ -121,40 +159,44 @@ const closeMenu = () => {
   z-index: 10;
   align-items: center;
 }
-.hamburger-menu ul{
+
+.hamburger-menu ul {
   margin: auto;
   text-align: center;
 }
-.hamburger-menu span{
-  display: block;
-}
-.hamburger-menu li{
+
+.hamburger-menu li {
   font-size: 20px;
   margin-top: 20px;
 }
-@media screen and (max-width:768px) {
-  .header-info{
+
+@media screen and (max-width: 768px) {
+  .header-info {
     display: none;
   }
+  
   .menu-icon {
     display: flex;
   }
-  .hamburger-menu{
+
+  .header-nav-content {
+    padding: 20px;
+  }
+
+  .hamburger-menu {
     display: flex;
   }
+
   .resume-btn {
     padding: 0.75rem 2.25rem;
     border: 2.5px solid var(--color);
     font-weight: bold;
     font-size: 16px;
   }
-  body{
+
+  body {
     overflow: hidden !important;
   }
 }
-@media screen and (max-width:600px) {
-  .header-nav {
-  padding: 20px;
-  }
-}
+
 </style>
