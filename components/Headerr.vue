@@ -3,7 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
 const isVisible = ref(true)
-let lastScrollY = window.scrollY
+let lastScrollY = window?.scrollY
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -14,7 +14,7 @@ const closeMenu = () => {
 }
 
 const handleScroll = () => {
-  const currentScrollY = window.scrollY
+  const currentScrollY = window?.scrollY
   isVisible.value = currentScrollY < lastScrollY || currentScrollY <= 0
   lastScrollY = currentScrollY
 }
