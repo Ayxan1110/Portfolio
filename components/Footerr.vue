@@ -1,13 +1,14 @@
 <script setup>
+
 </script>
 
 <template>
     <div class="side-elements">
         <div class="social-div">
             <ul>
-                <li class="icons"><a href="#"><img src="../public/github.svg" alt="folder"> </a></li>
-                <li class="icons"><a href="#"><img src="../public/ig.svg" alt="folder"></a> </li>
-                <li class="icons"><a href="#"><LinkedIn /></a></li>
+                <li class="icons"><a href="https://github.com/Ayxan1110" target="_blank"><Github /></a></li>
+                <li class="icons"><a href="https://www.instagram.com/ay.xan11/" target="_blank"><Instagram /></a> </li>
+                <li class="icons"><a href="https://www.linkedin.com/in/aykhan-dadashov-302914192/" target="_blank"><LinkedIn /></a></li>
             </ul>
         </div>
         <div class="mail-div">
@@ -23,6 +24,9 @@
     font-family: "Sf Mono";
     font-size: 14px;
     margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .mail-div{
     height: 350px;
@@ -32,7 +36,7 @@
     width: 40px;
     position: fixed;
     bottom: 0px;
-    left: 40px;
+    left: 20px;
     right: auto;
     z-index: 10;
 }
@@ -49,15 +53,18 @@ ul{
 }
 ul li{
     margin: 30px auto;
+    display: flex;
+    justify-content: center;
 }
 .mail-div{
     position: fixed;
     width: 40px;
     position: fixed;
     bottom: 0px;
-    right: 40px;
+    right: 20px;
     left: auto;
     z-index: 10;
+    margin: auto;
 }
 .mail-div::after{
     content: "";
@@ -70,10 +77,21 @@ ul li{
 .icons{
     color: #fff !important;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 1.8em;
-    height: 1.8em;
+    width: auto;
+    height: auto;
 }
 .icons:hover{
     transform: translateY(-5px);
+}
+.icons:hover svg{
+    stroke: var(--color);
+}
+@media screen and (max-width:768px) {
+    .mail-div{
+        display: none;
+    }
+    .social-div{
+        display: none;
+    }
 }
 </style>
