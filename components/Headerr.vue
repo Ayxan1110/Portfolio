@@ -87,7 +87,7 @@ onUnmounted(() => {
   height: 100px;
   top: 0;
   z-index: 100;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   background-color: var(--bg-dark);
   box-shadow: 0 4px 6px -6px var(--color);
 }
@@ -169,6 +169,13 @@ onUnmounted(() => {
   font-size: 20px;
   margin-top: 20px;
 }
+.hamburger-menu span {
+  display: block;
+  font-size: 16px;
+}
+.hamburger-menu li a {
+  font-size: 16px;
+}
 
 @media screen and (max-width: 768px) {
   .header-info {
@@ -191,7 +198,7 @@ onUnmounted(() => {
     padding: 0.75rem 2.25rem;
     border: 2.5px solid var(--color);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   body {
