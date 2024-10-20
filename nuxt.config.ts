@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: 'Aykhan Dadashov',
       meta: [
-        { name: 'description', content: 'Global description for my site.' }
+        { name: 'description', content: 'Portflio website of Aykhan Dadashov' }
       ],
     },
   }

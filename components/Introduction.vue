@@ -13,8 +13,8 @@
 .asas{
     font-family: "SF Mono";
     color: var(--color);
-    width: 15ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    width: 14.5ch;
+    animation: typing 2s steps(18), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;

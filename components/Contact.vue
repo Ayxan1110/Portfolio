@@ -4,7 +4,7 @@
         <h2>Get In Touch</h2>
         <p>I'm looking for opportunities and job offers, so feel free to reach out! My inbox is always open, and I’ll do my best to respond</p>
         <div class="flex justify-center">
-            <a class="mail" href="#">Say Hello</a>
+            <a class="mail" target="_blank" href="mailto:ayxan110.dadashov@gmail.com">Say Hello</a>
         </div>
         <div class="social-div">
             <ul>

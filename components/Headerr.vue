@@ -30,7 +30,7 @@ onUnmounted(() => {
 
 
 <template>
-  <nav :class="['header-nav', { 'fade-out': !isVisible }]">
+  <nav :class="['header-nav backdrop-blur', { 'fade-out': !isVisible }]">
     <div class="header-nav-content flex justify-between items-center">
       <div class="header-logo">
         <Logo />
@@ -84,11 +84,11 @@ onUnmounted(() => {
 .header-nav {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 80px;
   top: 0;
   z-index: 100;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-color: var(--bg-dark);
+  background-color: #0d0d0df0;
   box-shadow: 0 4px 6px -6px var(--color);
 }
 
@@ -98,7 +98,7 @@ onUnmounted(() => {
 }
 
 .header-nav-content {
-  padding: 20px 48px;
+  padding: 10px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
