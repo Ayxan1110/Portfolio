@@ -57,7 +57,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
         </ul>
-        <a href="/AykhanDadashov_CV2024.pdf" target="_blank" class="resume-btn" download>Resume</a>
+        <a href="/Aykhan_Dadashov.pdf" target="_blank" class="resume-btn">Resume</a>
       </div>
       <div class="menu-icon" @click="toggleMenu">
         <div></div>
@@ -79,7 +79,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
           <div class="mt-24">
-            <a href="/AykhanDadashov_CV2024.pdf" target="_blank" class="resume-btn" download>Resume</a>
+            <a href="/Aykhan_Dadashov.pdf" target="_blank" class="resume-btn">Resume</a>
           </div>
         </ul>
       </div>
