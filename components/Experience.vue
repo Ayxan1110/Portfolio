@@ -195,7 +195,7 @@ button {
     color: #f43200;
     transition-duration: 0.5s;
     background-color: #1c1c1cc9;
-    box-shadow: 0 -10px 10px -10px rgba(255, 99, 16, 0.75); /* Adjust shadow for the top */
+    box-shadow: 0 -10px 10px -10px rgba(255, 99, 16, 0.75);
   }
 }
 </style>

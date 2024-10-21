@@ -46,6 +46,9 @@ html {
   font-family: "CalibreB";
   src: url("../../public/Calibre-Medium.otf");
 }
+.no-scroll {
+  overflow: hidden !important;
+}
 .list li::before {
   content: "";
   position: absolute;

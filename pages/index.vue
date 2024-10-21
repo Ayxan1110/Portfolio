@@ -1,7 +1,8 @@
-<script setup></script>
+<script setup>
+</script>
 <template>
     <div>
-        <Headerr />
+        <MainHeader />
         <div class="container">
             <Introduction />
             <About />
@@ -9,7 +10,7 @@
             <!-- <Featured /> -->
             <Projects />
             <Contact />
-            <Footerr />
+            <MainFooter />
         </div>
     </div>
 </template>

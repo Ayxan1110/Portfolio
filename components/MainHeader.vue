@@ -7,11 +7,18 @@ let lastScrollY = window?.scrollY
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+  if (isMenuOpen.value) {
+    document.body.classList.add('no-scroll')
+  } else {
+    document.body.classList.remove('no-scroll')
+  }
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
+  document.body.classList.remove('no-scroll')
 }
+
 
 const handleScroll = () => {
   const currentScrollY = window?.scrollY
@@ -33,7 +40,7 @@ onUnmounted(() => {
   <nav :class="['header-nav backdrop-blur', { 'fade-out': !isVisible }]">
     <div class="header-nav-content flex justify-between items-center">
       <div class="header-logo">
-        <Logo />
+        <a href="#"><Logo /></a>
       </div>
       <div class="header-info flex gap-6 items-center">
         <ul class="flex justify-between gap-6">
@@ -57,7 +64,7 @@ onUnmounted(() => {
         <div></div>
         <div></div>
       </div>
-      <div class="hamburger-menu" v-if="isMenuOpen">
+      <div class="hamburger-menu" :class="{ open: isMenuOpen }">
         <ul>
           <li class="nav-section" @click="closeMenu">
             <a href="#about"><span class="nums-header">01.</span> About</a>
@@ -86,7 +93,7 @@ onUnmounted(() => {
   width: 100%;
   height: 80px;
   top: 0;
-  z-index: 100;
+  z-index: 9;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   background-color: #0d0d0df0;
   box-shadow: 0 4px 6px -6px var(--color);
@@ -155,9 +162,17 @@ onUnmounted(() => {
   right: 0;
   width: 60%;
   background-color: #373636;
-  height: 100%;
+  height: 100vh;
   z-index: 10;
   align-items: center;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-menu.open {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .hamburger-menu ul {
@@ -176,7 +191,6 @@ onUnmounted(() => {
 .hamburger-menu li a {
   font-size: 16px;
 }
-
 @media screen and (max-width: 768px) {
   .header-info {
     display: none;
@@ -187,7 +201,7 @@ onUnmounted(() => {
   }
 
   .header-nav-content {
-    padding: 20px;
+    padding: 12px 20px;
   }
 
   .hamburger-menu {
@@ -199,10 +213,6 @@ onUnmounted(() => {
     border: 2.5px solid var(--color);
     font-weight: bold;
     font-size: 14px;
-  }
-
-  body {
-    overflow: hidden !important;
   }
 }
 

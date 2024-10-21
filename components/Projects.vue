@@ -11,16 +11,14 @@
                         <a style="height: 20px; width: 20px;" href="#"><img src="../public/github.svg" alt="folder"></a>
                     </div>
                     <div class="mt-6">
-                        <h3 class="project-name">Integrating Algolia Search with WordPress Multisite</h3>
-                        <p class="project-desc">Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                        <h3 class="project-name">Coming soon...</h3>
+                        <p class="project-desc">In a short period of time there will be valid projects</p>
                     </div>
                     <div>
                         <ul>
-                            <li>Algolia</li>
-                            <li>WordPress</li>
-                            <li>PHP</li>
-                            <li>PHP</li>
-                            <li>PHP</li>
+                            <li>Just</li>
+                            <li>Wait</li>
+                            <li>)</li>
                         </ul>
                     </div>
                 </div>
@@ -32,14 +30,14 @@
                         <a style="height: 20px; width: 20px;" href="#"><img src="../public/github.svg" alt="folder"></a>
                     </div>
                     <div class="mt-6">
-                        <h3 class="project-name">Integrating Algolia Search with WordPress Multisite</h3>
-                        <p class="project-desc">Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                        <h3 class="project-name">Coming soon...</h3>
+                        <p class="project-desc">In a short period of time there will be valid projects</p>
                     </div>
                     <div>
                         <ul>
-                            <li>Algolia</li>
-                            <li>WordPress</li>
-                            <li>PHP</li>
+                            <li>Just</li>
+                            <li>Wait</li>
+                            <li>)</li>
                         </ul>
                     </div>
                 </div>
@@ -51,14 +49,14 @@
                         <a style="height: 20px; width: 20px;" href="#"><img src="../public/github.svg" alt="folder"></a>
                     </div>
                     <div class="mt-6">
-                        <h3 class="project-name">Integrating Algolia Search with WordPress Multisite</h3>
-                        <p class="project-desc">Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                        <h3 class="project-name">Coming soon...</h3>
+                        <p class="project-desc">In a short period of time there will be valid projects</p>
                     </div>
                     <div>
                         <ul>
-                            <li>Algolia</li>
-                            <li>WordPress</li>
-                            <li>PHP</li>
+                            <li>Just</li>
+                            <li>Wait</li>
+                            <li>)</li>
                         </ul>
                     </div>
                 </div>
