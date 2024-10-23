@@ -9,14 +9,17 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
   if (isMenuOpen.value) {
     document.body.classList.add('no-scroll')
+    document.querySelector(".container").classList.add('blur')
   } else {
     document.body.classList.remove('no-scroll')
+    document.querySelector(".container").classList.remove('blur')
   }
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
   document.body.classList.remove('no-scroll')
+  document.querySelector(".container").classList.remove('blur')
 }
 
 
