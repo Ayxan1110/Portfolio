@@ -32,10 +32,14 @@ const showJob = (name) => {
       <div class="expo-info pl-4">
         <div class="expo-div" v-if="activeJob === 'azercosmos'">
           <h3 class="job-title">
-            Machine Learning Engineering Intern <At />
-            <a href="https://azercosmos.az" target="_blank" class="text-lg link"
-              >Azercosmos</a
+            Machine Learning Engineering Intern
+            <a
+              href="https://azercosmos.az"
+              target="_blank"
+              class="text-lg link"
             >
+              <At />Azercosmos
+            </a>
           </h3>
           <p class="job-date">Jul - Aug 2021</p>
           <ul class="job-info list">
@@ -56,10 +60,10 @@ const showJob = (name) => {
         </div>
         <div class="expo-div" v-if="activeJob === 'jeyhun'">
           <h3 class="job-title">
-            Python Developer <At />
-            <a href="https://www.jis.az/" target="_blank" class="text-lg link"
-              >Jeyhun Imanov Studio</a
-            >
+            Python Developer
+            <a href="https://www.jis.az/" target="_blank" class="text-lg link">
+              <At />Jeyhun Imanov Studio
+            </a>
           </h3>
           <p class="job-date">Jul - Nov 2021</p>
           <ul class="job-info list">
@@ -77,10 +81,10 @@ const showJob = (name) => {
         </div>
         <div class="expo-div" v-if="activeJob === 'webzool'">
           <h3 class="job-title">
-            React Developer <At />
-            <a href="https://webzool.io/" target="_blank" class="text-lg link"
-              >Webzool</a
-            >
+            React Developer
+            <a href="https://webzool.io/" target="_blank" class="text-lg link">
+              <At />Webzool
+            </a>
           </h3>
           <p class="job-date">Jun 2022 - Jul 2024</p>
           <ul class="job-info list">
@@ -102,11 +106,11 @@ const showJob = (name) => {
 </template>
 
 <style scoped>
-#experience{
+#experience {
   max-width: 800px;
   margin: auto;
 }
-.experience-div{
+.experience-div {
   margin-top: 50px;
   display: flex;
 }
@@ -115,7 +119,7 @@ button {
   width: 100%;
   text-align: start;
 }
-.expo-div{
+.expo-div {
   animation: fadeIn 1s;
 }
 .job-list li:hover {
@@ -162,29 +166,33 @@ button {
 .expo-info {
   min-height: 300px;
 }
-.list li::before{
+.list li::before {
   width: 1em;
   height: 1em;
   left: -25px;
 }
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 600px) {
-  .experience-div{
+  .experience-div {
     margin-top: 10px;
     display: block;
   }
-  .expo-info{
+  .expo-info {
     margin-top: 30px;
-  } 
-  .job-list{
+  }
+  .job-list {
     display: flex;
     margin-top: 20px;
     overflow-x: scroll;
   }
-  .job-list li{
+  .job-list li {
     width: 100%;
     border-color: var(--color);
     border-left: none !important;
