@@ -1,11 +1,11 @@
-export default defineNuxtConfig({
+export default {
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
   modules: ['@nuxtjs/tailwindcss'],
   components: [
     {
       path: '~/components',
-      pathPrefix: false,    
+      pathPrefix: false,
     },
   ],
   css: [
@@ -18,8 +18,8 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: 'Aykhan Dadashov',
       meta: [
-        { name: 'description', content: 'Portflio website of Aykhan Dadashov' }
+        { name: 'description', content: 'Portfolio website of Aykhan Dadashov' }
       ],
     },
   }
-})
+};
