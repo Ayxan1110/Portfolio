@@ -42,27 +42,27 @@ onUnmounted(() => {
 <template>
   <nav :class="['header-nav backdrop-blur', { 'fade-out': !isVisible }]">
     <div class="header-nav-content flex justify-between items-center">
-      <div class="header-logo">
+      <div class="animate__animated animate__fadeIn header-logo">
         <a href="#"><Logo /></a>
       </div>
       <div class="header-info flex gap-6 items-center">
         <ul class="flex justify-between gap-6">
-          <li class="nav-section">
+          <li class="animate__animated animate__fadeInDown nav-section">
             <a href="#about"><span class="nums-header">01.</span> About</a>
           </li>
-          <li class="nav-section">
+          <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.15s;">
             <a href="#experience"><span class="nums-header">02.</span> Experience</a>
           </li>
-          <li class="nav-section">
+          <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.3s;">
             <a href="#projects"><span class="nums-header">03.</span> Work</a>
           </li>
-          <li class="nav-section">
+          <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.45s;">
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
         </ul>
-        <a href="/Aykhan_Dadashov.pdf" target="_blank" class="resume-btn">Resume</a>
+        <a href="/Aykhan_Dadashov.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
       </div>
-      <div class="menu-icon" @click="toggleMenu">
+      <div class="menu-icon animate__animated animate__fadeIn" @click="toggleMenu">
         <div></div>
         <div></div>
         <div></div>
@@ -201,6 +201,7 @@ onUnmounted(() => {
   
   .menu-icon {
     display: flex;
+    margin-right: 10px;
   }
 
   .header-nav-content {

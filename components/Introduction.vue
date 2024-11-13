@@ -1,10 +1,10 @@
 <template>
-    <div class="md: py-48 sm: py-18">
-        <h2 class="asas">Hi, my name is</h2>
-        <h1 class="name">Aykhan Dadashov</h1>
-        <h3 class="sasa">I build things for the web.</h3>
-        <p class="text-white">
-            I'm a front-end developer passionate about building interactive and visually appealing web experiences. Currently, I'm focused on expanding my skills with Nuxt.js to create even more efficient and dynamic web applications.
+    <div class="my-auto py-60">
+        <h2 class="asas animate__animated animate__fadeInUp">Hi, my name is</h2>
+        <h1 class="name animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">Aykhan Dadashov</h1>
+        <h3 class="sasa animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">I build things for the web.</h3>
+        <p class="text-white animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
+          I'm a front-end developer passionate about building interactive and visually appealing web experiences. Currently, I'm focused on expanding my skills with Nuxt.js to create even more efficient and dynamic web applications.
         </p>
     </div>
 </template>
@@ -14,7 +14,7 @@
   font-family: "SF Mono";
   color: var(--color);
   width: 14.5ch;
-  animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(18), blink 1.2s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="side-elements">
+    <div class="animate__animated animate__fadeIn side-elements" style="animation-delay: 1.5s;">
         <div class="social-div">
             <ul>
                 <li class="icons"><a href="https://github.com/Ayxan1110" target="_blank"><Github /></a></li>
