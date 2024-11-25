@@ -60,7 +60,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
         </ul>
-        <a href="/Aykhan_Dadashov.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
+        <a href="/AykhanDadashovCV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
       </div>
       <div class="menu-icon animate__animated animate__fadeIn" @click="toggleMenu">
         <div></div>
@@ -82,7 +82,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
           <div class="mt-24">
-            <a href="/Aykhan_Dadashov.pdf" target="_blank" class="resume-btn">Resume</a>
+            <a href="/AykhanDadashovCV.pdf" target="_blank" class="resume-btn">Resume</a>
           </div>
         </ul>
       </div>
