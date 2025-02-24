@@ -54,13 +54,13 @@ onUnmounted(() => {
             <a href="#experience"><span class="nums-header">02.</span> Experience</a>
           </li>
           <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.3s;">
-            <a href="#projects"><span class="nums-header">03.</span> Work</a>
+            <a href="#projects"><span class="nums-header">03.</span> Projects</a>
           </li>
           <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.45s;">
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
         </ul>
-        <a href="/AykhanDadashovCV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
+        <a href="/AykhanDadashov_CV2025.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
       </div>
       <div class="menu-icon animate__animated animate__fadeIn" @click="toggleMenu">
         <div></div>
@@ -76,13 +76,13 @@ onUnmounted(() => {
             <a href="#experience"><span class="nums-header">02.</span> Experience</a>
           </li>
           <li class="nav-section" @click="closeMenu">
-            <a href="#projects"><span class="nums-header">03.</span> Work</a>
+            <a href="#projects"><span class="nums-header">03.</span> Projects</a>
           </li>
           <li class="nav-section" @click="closeMenu">
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
           <div class="mt-24">
-            <a href="/AykhanDadashovCV.pdf" target="_blank" class="resume-btn">Resume</a>
+            <a href="/AykhanDadashov_CV2025.pdf" target="_blank" class="resume-btn">Resume</a>
           </div>
         </ul>
       </div>
@@ -154,8 +154,8 @@ onUnmounted(() => {
 
 .resume-btn:hover {
   outline: none;
-  box-shadow: 4px 4px 0 0 var(--color);
-  transform: translate(-5px, -5px);
+  box-shadow: -4px -4px 0 0 var(--color);
+  transform: translate(5px, 5px);
 }
 
 .hamburger-menu {

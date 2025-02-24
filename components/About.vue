@@ -21,16 +21,16 @@
         <li>React</li>
         <li>Next</li>
         <li>Node</li>
-        <li>JavaScript (ES6+)</li>
+        <li>JavaScript</li>
         <li>Vue</li>
-        <li>Nuxt</li>
+        <li>TypeScript</li>
       </ul>
     </div>
     <div class="image-wrapper">
       <div class="image">
         <img 
           class="m-auto" 
-          src="../assets/imgs/me.jpg" 
+          src="../assets/imgs/me2.png" 
           alt="photo"
         >
         <div class="overlay"></div>
@@ -42,7 +42,7 @@
 <style scoped>
 .image-wrapper{
   width: 300px;
-  height: 330px;
+  height: 400px;
   margin: auto;
   position: relative;
   border: 2px solid var(--color);
@@ -52,6 +52,8 @@
 .image img{
   border-radius: 5px;
   position: absolute;
+  height: 100%;
+  width: 100%;
   bottom: 3%;
   right: 3%;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -144,8 +146,8 @@ p {
     display: none;
   }
   .image-wrapper{
-    width: 200px;
-    height: 220px;
+    width: 220px;
+    height: 280px;
   }
   .about-text{
     font-size: 18px;

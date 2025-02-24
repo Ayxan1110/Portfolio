@@ -4,7 +4,7 @@
         <h1 class="name animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">Aykhan Dadashov</h1>
         <h3 class="sasa animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">I build things for the web.</h3>
         <p class="text-white animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
-          I'm a front-end developer passionate about building interactive and visually appealing web experiences. Currently, I'm focused on expanding my skills with Nuxt.js to create even more efficient and dynamic web applications.
+          I'm a Software Developer passionate about crafting interactive and visually engaging web experiences. I love building creative projects, experimenting with new technologies, and currently exploring the Spotify API and Google Chrome extensions to create dynamic and personalized user experiences.
         </p>
     </div>
 </template>
@@ -46,7 +46,7 @@
 }
 p{
     font-family: "Calibre"; 
-    width: 60%;
+    width: 80%;
     font-size: 20px;
     margin-top: 30px;
 }

@@ -71,7 +71,7 @@ export default {
                     </div>
                     <div class="mt-6">
                         <h3 class="project-name">Coming soon...</h3>
-                        <p class="project-desc">In a short period of time there will be valid projects</p>
+                        <!-- <p class="project-desc">In a short period of time there will be valid projects</p> -->
                     </div>
                     <div>
                         <ul>

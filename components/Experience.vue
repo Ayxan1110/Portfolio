@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-const activeJob = ref("webzool");
+const activeJob = ref("bonapp");
 
 const showJob = (name) => {
   activeJob.value = name;
@@ -18,6 +18,9 @@ const showJob = (name) => {
     <div class="experience-div">
       <div>
         <ul class="job-list">
+          <li :class="{ active: activeJob === 'bonapp' }">
+            <button @click="showJob('bonapp')">BonApp</button>
+          </li>
           <li :class="{ active: activeJob === 'webzool' }">
             <button @click="showJob('webzool')">Webzool</button>
           </li>
@@ -32,7 +35,7 @@ const showJob = (name) => {
       <div class="expo-info pl-4">
         <div class="expo-div" v-if="activeJob === 'azercosmos'">
           <h3 class="job-title">
-            Machine Learning Engineering Intern
+            ML Engineering Intern
             <a
               href="https://azercosmos.az"
               target="_blank"
@@ -44,6 +47,9 @@ const showJob = (name) => {
           <p class="job-date">Jul - Aug 2021</p>
           <ul class="job-info list">
             <li>
+              Gained hands-on experience in machine learning engineering and Python frameworks such as TensorFlow
+            </li>
+            <li>
               Learned the basics of machine learning engineering, as well as
               broadened knowledge in Python by learning TensorFlow and similar
               libraries.
@@ -51,10 +57,6 @@ const showJob = (name) => {
             <li>
               Worked on detecting cars from satellite images by developing deep
               learning models for image segmentation and object detection.
-            </li>
-            <li>
-              Collaborated with a team to preprocess satellite data, fine-tune
-              models, and improve accuracy using transfer learning techniques.
             </li>
           </ul>
         </div>
@@ -67,21 +69,21 @@ const showJob = (name) => {
           </h3>
           <p class="job-date">Jul - Nov 2021</p>
           <ul class="job-info list">
-            <li>Tasked to make web parsers using Python and its' libraries</li>
-            <li>Fixed various bugs in Python based software</li>
+            <li>
+              Developed web parsers using Python and libraries like BeautifulSoup, Selenium, and Flask
+            </li>
             <li>
               Contributed in the Front-end and the Back-end of different
               projects.
             </li>
             <li>
-              Used HTML5, CSS3, JS ECMA6, Python, Flask (BS4, Selenium and
-              similar libraries)
+              Enhanced code maintainability by implementing modular and reusable components.
             </li>
           </ul>
         </div>
         <div class="expo-div" v-if="activeJob === 'webzool'">
           <h3 class="job-title">
-            React Developer
+            Front-End Developer (Remote)
             <a href="https://webzool.io/" target="_blank" class="text-lg link">
               <At />Webzool
             </a>
@@ -89,15 +91,44 @@ const showJob = (name) => {
           <p class="job-date">Jun 2022 - Jul 2024</p>
           <ul class="job-info list">
             <li>
-              Tasked to make web pages using Next JS, React JS, Redux, and MobX
+              Developed dynamic and responsive web pages using Next.js, React.js,
+              Redux, and MobX to optimize performance and user experience.
             </li>
-            <li>Solve bugs and errors of web pages on front-end projects</li>
             <li>
-              Optimized performance of a React.js application, resulting in a
-              30% decrease in load times and improved user experience
+              Enhanced SEO scores for mobile and desktop by 60% through efficient
+              use of Next.js server-side rendering and optimization techniques.
             </li>
-            <li>Develop mini games for users</li>
-            <li>Implement Github Actions in companies' projects using</li>
+            <li>
+              Designed and implemented interactive mini-games, improving user engagement
+            </li>
+            <li>
+              Automated workflows by implementing CI/CD pipelines using GitHub Actions, increasing deployment efficiency.
+            </li>
+          </ul>
+        </div>
+        <div class="expo-div" v-if="activeJob === 'bonapp'">
+          <h3 class="job-title">
+            Front-End Developer
+            <a href="https://webzool.io/" target="_blank" class="text-lg link">
+              <At />BonApp
+            </a>
+          </h3>
+          <p class="job-date">Dec 2024 - Present</p>
+          <ul class="job-info list">
+            <li>
+              Collaborated on building scalable web applications using React,
+              ensuring responsiveness and performance optimization
+            </li>
+            <li>
+              Implemented state management with Redux to maintain predictable and efficient UI workflows
+            </li>
+            <li>
+              Adopted Monorepo architecture to unify codebases and streamline development across multiple projects
+            </li>
+            <li>
+              Used Azure DevOps for task creation, branch management, and fostering
+              seamless collaboration in agile development workflows.
+            </li>
           </ul>
         </div>
       </div>
