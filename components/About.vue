@@ -6,7 +6,7 @@
     <div class="about-info">
       <h3 class="section-header"><span class="nums-content">01.</span> About Me</h3>
       <p class="about-text">
-        Hello! My name is Aykhan Dadashov, and I enjoy creating things that live on the internet.
+        I enjoy creating things that live on the internet.
         My interest in web development began in 2019 after completing a full stack development course at <a target="_blank" href="https://code.edu.az/" class="link">Code Academy</a>.
         <br />
         <br />

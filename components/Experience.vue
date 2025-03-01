@@ -47,7 +47,7 @@ const showJob = (name) => {
           <p class="job-date">Jul - Aug 2021</p>
           <ul class="job-info list">
             <li>
-              Gained hands-on experience in machine learning engineering and Python frameworks such as TensorFlow
+              Gained hands-on experience in machine learning engineering and Python frameworks such as TensorFlow.
             </li>
             <li>
               Learned the basics of machine learning engineering, as well as
@@ -70,10 +70,10 @@ const showJob = (name) => {
           <p class="job-date">Jul - Nov 2021</p>
           <ul class="job-info list">
             <li>
-              Developed web parsers using Python and libraries like BeautifulSoup, Selenium, and Flask
+              Developed web parsers using Python and libraries like BeautifulSoup, Selenium, and Flask.
             </li>
             <li>
-              Contributed in the Front-end and the Back-end of different
+              Contributed in the Front-end and the Back-end of different.
               projects.
             </li>
             <li>
@@ -99,7 +99,7 @@ const showJob = (name) => {
               use of Next.js server-side rendering and optimization techniques.
             </li>
             <li>
-              Designed and implemented interactive mini-games, improving user engagement
+              Designed and implemented interactive mini-games, improving user engagement.
             </li>
             <li>
               Automated workflows by implementing CI/CD pipelines using GitHub Actions, increasing deployment efficiency.
@@ -109,7 +109,7 @@ const showJob = (name) => {
         <div class="expo-div" v-if="activeJob === 'bonapp'">
           <h3 class="job-title">
             Front-End Developer
-            <a href="https://webzool.io/" target="_blank" class="text-lg link">
+            <a href="https://bonapp.group/" target="_blank" class="text-lg link">
               <At />BonApp
             </a>
           </h3>
@@ -117,17 +117,21 @@ const showJob = (name) => {
           <ul class="job-info list">
             <li>
               Collaborated on building scalable web applications using React,
-              ensuring responsiveness and performance optimization
+              ensuring responsiveness and performance optimization.
             </li>
             <li>
-              Implemented state management with Redux to maintain predictable and efficient UI workflows
+              Implemented state management with Redux to maintain predictable and efficient UI workflows.
             </li>
             <li>
-              Adopted Monorepo architecture to unify codebases and streamline development across multiple projects
+              Adopted Monorepo architecture to unify codebases and streamline development across multiple projects.
             </li>
             <li>
               Used Azure DevOps for task creation, branch management, and fostering
               seamless collaboration in agile development workflows.
+            </li>
+            <li>
+              Designed wireframes and prototypes for a large-scale project using Figma,
+              facilitating clear communication between design and development teams.
             </li>
           </ul>
         </div>

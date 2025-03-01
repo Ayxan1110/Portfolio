@@ -60,7 +60,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
         </ul>
-        <a href="/AykhanDadashov_CV2025.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
+        <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
       </div>
       <div class="menu-icon animate__animated animate__fadeIn" @click="toggleMenu">
         <div></div>
@@ -82,7 +82,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
           <div class="mt-24">
-            <a href="/AykhanDadashov_CV2025.pdf" target="_blank" class="resume-btn">Resume</a>
+            <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn">Resume</a>
           </div>
         </ul>
       </div>
@@ -116,7 +116,7 @@ onUnmounted(() => {
 
 .menu-icon {
   width: 35px;
-  height: 30px;
+  height: 25px;
   display: none;
   justify-content: space-between;
   flex-direction: column;
@@ -217,6 +217,16 @@ onUnmounted(() => {
     border: 2.5px solid var(--color);
     font-weight: bold;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-nav {
+    height: 70px;
+  }
+  .header-logo svg {
+    width: 50px;
+    height: 50px;
   }
 }
 
