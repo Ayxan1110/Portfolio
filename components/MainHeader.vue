@@ -3,6 +3,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
 const isVisible = ref(true)
+const menuRef = ref(null)
+const menuIconRef = ref(null)
 let lastScrollY = window?.scrollY
 
 const toggleMenu = () => {
@@ -22,6 +24,15 @@ const closeMenu = () => {
   document.querySelector(".container").classList.remove('blur')
 }
 
+const handleClickOutside = (event) => {
+  if (isMenuOpen.value && 
+      menuRef.value && 
+      !menuRef.value.contains(event.target) && 
+      menuIconRef.value && 
+      !menuIconRef.value.contains(event.target)) {
+    closeMenu()
+  }
+}
 
 const handleScroll = () => {
   const currentScrollY = window?.scrollY
@@ -31,10 +42,12 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+  document.addEventListener('click', handleClickOutside)
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  document.removeEventListener('click', handleClickOutside)
 })
 </script>
 
@@ -60,14 +73,14 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
         </ul>
-        <a href="/AykhanDadashovCV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
+        <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
       </div>
-      <div class="menu-icon animate__animated animate__fadeIn" @click="toggleMenu">
+      <div ref="menuIconRef" class="menu-icon animate__animated animate__fadeIn" @click="toggleMenu" :class="{ 'open': isMenuOpen }">
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <div class="hamburger-menu" :class="{ open: isMenuOpen }">
+      <div ref="menuRef" class="hamburger-menu" :class="{ open: isMenuOpen }">  
         <ul>
           <li class="nav-section" @click="closeMenu">
             <a href="#about"><span class="nums-header">01.</span> About</a>
@@ -82,7 +95,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
           <div class="mt-24">
-            <a href="/AykhanDadashovCV.pdf" target="_blank" class="resume-btn">Resume</a>
+            <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn">Resume</a>
           </div>
         </ul>
       </div>
@@ -122,6 +135,7 @@ onUnmounted(() => {
   flex-direction: column;
   cursor: pointer;
   z-index: 11;
+  position: relative;
 }
 
 .menu-icon div {
@@ -129,6 +143,37 @@ onUnmounted(() => {
   height: 4px;
   width: 100%;
   border-radius: 5px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  position: absolute;
+  left: 0;
+}
+
+.menu-icon div:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon div:nth-child(2) {
+  top: 13px;
+}
+
+.menu-icon div:nth-child(3) {
+  top: 26px;
+}
+
+.menu-icon.open div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+}
+
+.menu-icon.open div:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-icon.open div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
 }
 
 .nav-section {
@@ -164,7 +209,7 @@ onUnmounted(() => {
   top: 0;
   right: 0;
   width: 60%;
-  background-color: #373636;
+  background: #1a1a1a;
   height: 100vh;
   z-index: 10;
   align-items: center;

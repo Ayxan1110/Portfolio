@@ -4,7 +4,7 @@
         <h1 class="name animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">Aykhan Dadashov</h1>
         <h3 class="sasa animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">I build things for the web.</h3>
         <p class="text-white animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
-          I'm a front-end developer passionate about building interactive and visually appealing web experiences. Currently, I'm focused on expanding my skills with Nuxt.js to create even more efficient and dynamic web applications.
+          I'm a Software Developer focused on Front-End and Mobile Development. I enjoy building clean, engaging user experiences and exploring AI to add smart features like personalization and automation.
         </p>
     </div>
 </template>

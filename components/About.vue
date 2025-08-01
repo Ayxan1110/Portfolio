@@ -30,7 +30,7 @@
       <div class="image">
         <img 
           class="m-auto" 
-          src="../assets/imgs/me.jpg" 
+          src="../assets/imgs/me2.jpg" 
           alt="photo"
         >
         <div class="overlay"></div>
@@ -54,6 +54,9 @@
   position: absolute;
   bottom: 3%;
   right: 3%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   z-index: 2;
 }

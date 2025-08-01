@@ -9,6 +9,10 @@ export default {
       spa: {
         linkUrl: "https://restaurantmenu110.netlify.app/",
         repoUrl: "https://github.com/Ayxan1110/Restaurant-Menu-SPA"
+      },
+      hitcher: {
+        linkUrl: "https://hitcher.it.com",
+        repoUrl: "https://github.com/Ayxan1110/Hitcher"
       }
     };
   },
@@ -63,21 +67,21 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="project-wrap">
+            <div @click="redirectToPage(hitcher.linkUrl)" class="project-wrap">
                 <div class="project">
                     <div class="flex justify-between items-center">
                         <img width="40" height="40" src="../public/folder.svg" alt="folder">
-                        <a class="gh-icon" target="_blank" @click.stop><Github /></a>
+                        <a class="gh-icon" :href="hitcher.repoUrl" target="_blank" @click.stop v-if="hitcher.repoUrl"><Github /></a>
                     </div>
                     <div class="mt-6">
-                        <h3 class="project-name">Coming soon...</h3>
-                        <p class="project-desc">In a short period of time there will be valid projects</p>
+                        <h3 class="project-name">Hitcher</h3>
+                        <p class="project-desc">A project developed during Innovate Mobility Summer School in Budapest</p>
                     </div>
                     <div>
                         <ul>
-                            <li>Just</li>
-                            <li>Wait</li>
-                            <li>)</li>
+                            <li>React</li>
+                            <li>Typescript</li>
+                            <li>Tailwind CSS</li>
                         </ul>
                     </div>
                 </div>
