@@ -67,7 +67,7 @@ onUnmounted(() => {
             <a href="#experience"><span class="nums-header">02.</span> Experience</a>
           </li>
           <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.3s;">
-            <a href="#projects"><span class="nums-header">03.</span> Work</a>
+            <a href="#projects"><span class="nums-header">03.</span> Projects</a>
           </li>
           <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.45s;">
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
@@ -89,7 +89,7 @@ onUnmounted(() => {
             <a href="#experience"><span class="nums-header">02.</span> Experience</a>
           </li>
           <li class="nav-section" @click="closeMenu">
-            <a href="#projects"><span class="nums-header">03.</span> Work</a>
+            <a href="#projects"><span class="nums-header">03.</span> Projects</a>
           </li>
           <li class="nav-section" @click="closeMenu">
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
@@ -129,7 +129,7 @@ onUnmounted(() => {
 
 .menu-icon {
   width: 35px;
-  height: 30px;
+  height: 25px;
   display: none;
   justify-content: space-between;
   flex-direction: column;
@@ -199,8 +199,8 @@ onUnmounted(() => {
 
 .resume-btn:hover {
   outline: none;
-  box-shadow: 4px 4px 0 0 var(--color);
-  transform: translate(-5px, -5px);
+  box-shadow: -4px -4px 0 0 var(--color);
+  transform: translate(5px, 5px);
 }
 
 .hamburger-menu {
@@ -262,6 +262,16 @@ onUnmounted(() => {
     border: 2.5px solid var(--color);
     font-weight: bold;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-nav {
+    height: 70px;
+  }
+  .header-logo svg {
+    width: 50px;
+    height: 50px;
   }
 }
 

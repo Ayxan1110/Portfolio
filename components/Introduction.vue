@@ -46,7 +46,7 @@
 }
 p{
     font-family: "Calibre"; 
-    width: 60%;
+    width: 80%;
     font-size: 20px;
     margin-top: 30px;
 }

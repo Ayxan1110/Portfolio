@@ -6,7 +6,7 @@
     <div class="about-info">
       <h3 class="section-header"><span class="nums-content">01.</span> About Me</h3>
       <p class="about-text">
-        Hello! My name is Aykhan Dadashov, and I enjoy creating things that live on the internet.
+        I enjoy creating things that live on the internet.
         My interest in web development began in 2019 after completing a full stack development course at <a target="_blank" href="https://code.edu.az/" class="link">Code Academy</a>.
         <br />
         <br />
@@ -21,9 +21,9 @@
         <li>React</li>
         <li>Next</li>
         <li>Node</li>
-        <li>JavaScript (ES6+)</li>
+        <li>JavaScript</li>
         <li>Vue</li>
-        <li>Nuxt</li>
+        <li>TypeScript</li>
       </ul>
     </div>
     <div class="image-wrapper">
@@ -42,7 +42,7 @@
 <style scoped>
 .image-wrapper{
   width: 300px;
-  height: 330px;
+  height: 400px;
   margin: auto;
   position: relative;
   border: 2px solid var(--color);
@@ -52,6 +52,8 @@
 .image img{
   border-radius: 5px;
   position: absolute;
+  height: 100%;
+  width: 100%;
   bottom: 3%;
   right: 3%;
   width: 100%;
@@ -147,8 +149,8 @@ p {
     display: none;
   }
   .image-wrapper{
-    width: 200px;
-    height: 220px;
+    width: 220px;
+    height: 280px;
   }
   .about-text{
     font-size: 18px;

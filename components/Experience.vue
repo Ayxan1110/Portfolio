@@ -47,6 +47,9 @@ const showJob = (name) => {
           <p class="job-date">Jul - Aug 2021</p>
           <ul class="job-info list">
             <li>
+              Gained hands-on experience in machine learning engineering and Python frameworks such as TensorFlow.
+            </li>
+            <li>
               Learned the basics of machine learning engineering, as well as
               broadened knowledge in Python by learning TensorFlow and similar
               libraries.
@@ -54,10 +57,6 @@ const showJob = (name) => {
             <li>
               Worked on detecting cars from satellite images by developing deep
               learning models for image segmentation and object detection.
-            </li>
-            <li>
-              Collaborated with a team to preprocess satellite data, fine-tune
-              models, and improve accuracy using transfer learning techniques.
             </li>
           </ul>
         </div>
