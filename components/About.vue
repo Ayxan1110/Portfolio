@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div id="about" class="lg:py-36 md:py-24 sm:py-12 grid grid-cols-1 md:grid-cols-2">
+  <div v-reveal id="about" class="lg:py-36 md:py-24 sm:py-12 grid grid-cols-1 md:grid-cols-2">
     <div class="about-info">
       <h3 class="section-header"><span class="nums-content">01.</span> About Me</h3>
       <p class="about-text">
@@ -10,31 +10,28 @@
         My interest in web development began in 2019 after completing a full stack development course at <a target="_blank" href="https://code.edu.az/" class="link">Code Academy</a>.
         <br />
         <br />
-        Since then, I’ve been challenging myself to learn something new every day. I’ve had the privilege
-        of working in various environments, from startups to large corporations, and my focus now is on building accessible
-        and inclusive digital experiences.
+        Since then, I’ve worked across different environments — from remote teams to fast-paced startups — building
+        everything from responsive frontends to full-stack platforms with analytics, search, and API integrations.
         <br />
         <br />
         Here are a few technologies I’ve been working with recently:
       </p>
       <ul class="list technos">
-        <li>React</li>
-        <li>Next</li>
-        <li>Node</li>
-        <li>JavaScript</li>
-        <li>Vue</li>
+        <li>React / Next.js</li>
         <li>TypeScript</li>
+        <li>Node / NestJS</li>
+        <li>GraphQL</li>
+        <li>Vue / Nuxt</li>
+        <li>PostgreSQL / Prisma</li>
       </ul>
     </div>
     <div class="image-wrapper">
-      <div class="image">
-        <img 
-          class="m-auto" 
-          src="../assets/imgs/me2.jpg" 
-          alt="photo"
-        >
-        <div class="overlay"></div>
-      </div>
+      <img
+        class="about-img"
+        src="../assets/imgs/profile.jpg"
+        alt="photo"
+      >
+      <div class="overlay"></div>
     </div>
   </div>
 </template>
@@ -45,48 +42,48 @@
   height: 400px;
   margin: auto;
   position: relative;
+  cursor: pointer;
+}
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
   border: 2px solid var(--color);
   border-radius: 5px;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: 0;
 }
-.image img{
+.image-wrapper:hover::after {
+  transform: translate(5px, 5px);
+}
+.about-img{
+  position: relative;
   border-radius: 5px;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  bottom: 3%;
-  right: 3%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   z-index: 2;
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.image:hover img{
-  bottom: 4.5%;
-  right: 4.5%;
-  filter: none
-}
-.image:hover .overlay{
-  bottom: 4.5%;
-  right: 4.5%;
-  filter: none
+.image-wrapper:hover .about-img{
+  transform: translate(-5px, -5px);
 }
 .overlay {
   position: absolute;
-  border-radius: 5px;
-  bottom: 3%;
-  right: 3%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color);
   border-radius: 5px;
-  z-index: 5;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: var(--color);
+  z-index: 3;
   opacity: .3;
+  transition: opacity 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-.image:hover .overlay {
+.image-wrapper:hover .overlay {
   opacity: 0;
 }
 
@@ -145,8 +142,9 @@ p {
   }
 }
 @media screen and (max-width: 480px) {
-  .overlay{
-    display: none;
+  .image-wrapper::after{
+    top: 10px;
+    left: 10px;
   }
   .image-wrapper{
     width: 220px;

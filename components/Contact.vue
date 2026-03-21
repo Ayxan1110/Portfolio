@@ -1,5 +1,5 @@
 <template>
-    <div id="contact" class="md: py-36 sm: py-12">
+    <div v-reveal id="contact" class="md: py-36 sm: py-12">
         <h4 class="text-center "><span class="nums-content">04.</span> What’s Next?</h4>
         <h2>Get In Touch</h2>
         <p>I'm looking for opportunities and job offers, so feel free to reach out! My inbox is always open, and I’ll do my best to respond</p>
@@ -10,7 +10,7 @@
             <ul>
                 <li class="icons"><a href="https://github.com/Ayxan1110" target="_blank"><Github /></a></li>
                 <li class="icons"><a href="https://www.instagram.com/ay.xan11/" target="_blank"><Instagram /></a> </li>
-                <li class="icons"><a href="https://www.linkedin.com/in/aykhan-dadashov-302914192/" target="_blank"><LinkedIn /></a></li>
+                <li class="icons"><a href="https://www.linkedin.com/in/aykhandadashov110/" target="_blank"><LinkedIn /></a></li>
             </ul>
         </div>
     </div>

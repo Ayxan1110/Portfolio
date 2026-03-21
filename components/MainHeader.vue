@@ -198,9 +198,7 @@ onUnmounted(() => {
 }
 
 .resume-btn:hover {
-  outline: none;
-  box-shadow: -4px -4px 0 0 var(--color);
-  transform: translate(5px, 5px);
+  background-color: rgba(244, 50, 0, 0.1);
 }
 
 .hamburger-menu {

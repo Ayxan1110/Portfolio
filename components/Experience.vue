@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-const activeJob = ref("bonapp");
+const activeJob = ref("adsmom");
 
 const showJob = (name) => {
   activeJob.value = name;
@@ -9,7 +9,7 @@ const showJob = (name) => {
 </script>
 
 <template>
-  <div id="experience" class="lg: py-36 md: py-36 sm: py-12">
+  <div v-reveal id="experience" class="lg: py-36 md: py-36 sm: py-12">
     <div>
       <h3 class="section-header text-center">
         <span class="nums-content">02.</span>Where I’ve Worked
@@ -18,6 +18,9 @@ const showJob = (name) => {
     <div class="experience-div">
       <div>
         <ul class="job-list">
+          <li :class="{ active: activeJob === 'adsmom' }">
+            <button @click="showJob('adsmom')">Adsmom</button>
+          </li>
           <li :class="{ active: activeJob === 'bonapp' }">
             <button @click="showJob('bonapp')">BonApp</button>
           </li>
@@ -88,8 +91,35 @@ const showJob = (name) => {
             <li>
               Enhanced Search Engine Optimization scores for mobile and desktop by 60% through efficient use of Next.js server-side rendering and optimization techniques.
             </li>
-            <li>Designed and implemented interactive mini-games, improving user engagement.</li>
-            <li>Automated workflows by implementing CI/CD pipelines using GitHub Actions, increasing deployment efficiency.</li>
+            <li>
+              Designed and developed interactive promotional games including advent calendars and reward-based challenges, driving user engagement.
+            </li>
+          </ul>
+        </div>
+        <div class="expo-div" v-if="activeJob === 'adsmom'">
+          <h3 class="job-title">
+            Software Developer
+            <a href="https://adsmom.com" target="_blank" class="text-lg link">
+              <At />Adsmom
+            </a>
+          </h3>
+          <p class="job-date">Aug 2025 - Present</p>
+          <ul class="job-info list">
+            <li>
+              Built semantic search for ad discovery using vector embeddings, enabling users to find relevant ads across 200M+ Meta advertisements.
+            </li>
+            <li>
+              Designed a relevance-based ad scoring system that prioritizes ads by reach, active status, and recency, improving the accuracy of competitive insights.
+            </li>
+            <li>
+              Led frontend architecture using Next.js, React, and GraphQL, delivering end-to-end features including onboarding flows and platform-wide UI redesigns.
+            </li>
+            <li>
+              Integrated with Meta Ad Library API for ad data ingestion, managing token lifecycle and API workflows across the platform.
+            </li>
+            <li>
+              Built Metabase dashboards for business analytics and integrated PostHog with Slack for real-time user activity notifications.
+            </li>
           </ul>
         </div>
         <div class="expo-div" v-if="activeJob === 'bonapp'">
@@ -102,13 +132,10 @@ const showJob = (name) => {
           <p class="job-date">Dec 2024 - Jul 2025</p>
           <ul class="job-info list">
             <li>
-              Collaborated on building scalable web applications using React, ensuring responsiveness and performance optimization.
-            </li>
-            <li>
-              Implemented state management with Redux to maintain predictable and efficient UI workflows.
-            </li>
-            <li>
               Adopted Monorepo architecture to unify codebases and streamline development across multiple projects.
+            </li>
+            <li>
+              Managed development workflows using Azure DevOps for task tracking, branch management, and agile collaboration.
             </li>
             <li>
               Designed wireframes and prototypes for a large-scale project using Figma, facilitating clear communication between design and development teams.

@@ -8,7 +8,7 @@
             <ul>
                 <li class="icons"><a href="https://github.com/Ayxan1110" target="_blank"><Github /></a></li>
                 <li class="icons"><a href="https://www.instagram.com/ay.xan11/" target="_blank"><Instagram /></a> </li>
-                <li class="icons"><a href="https://www.linkedin.com/in/aykhan-dadashov-302914192/" target="_blank"><LinkedIn /></a></li>
+                <li class="icons"><a href="https://www.linkedin.com/in/aykhandadashov110/" target="_blank"><LinkedIn /></a></li>
             </ul>
         </div>
         <div class="mail-div">

@@ -4,7 +4,7 @@
         <h1 class="name animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">Aykhan Dadashov</h1>
         <h3 class="sasa animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">I build things for the web.</h3>
         <p class="text-white animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
-          I'm a Software Developer focused on Front-End and Mobile Development. I enjoy building clean, engaging user experiences and exploring AI to add smart features like personalization and automation.
+          I'm a Software Developer focused on building scalable web applications and data-driven products. I enjoy working across the full stack, from crafting responsive UIs to integrating APIs and analytics tools. Recently, I've been exploring AI integration and mobile app development, turning creative ideas into real products.
         </p>
     </div>
 </template>

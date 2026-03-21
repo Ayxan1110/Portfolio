@@ -24,7 +24,7 @@ export default {
 }
 </script>
 <template>
-    <div id="projects" class="md:py-36 sm: py-12">
+    <div v-reveal id="projects" class="md:py-36 sm: py-12">
         <div>
             <h3 class="section-header"><span class="nums-content">03.</span>My Projects</h3>
         </div>
