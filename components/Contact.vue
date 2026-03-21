@@ -2,7 +2,7 @@
     <div v-reveal id="contact" class="md: py-36 sm: py-12">
         <h4 class="text-center "><span class="nums-content">04.</span> What’s Next?</h4>
         <h2>Get In Touch</h2>
-        <p>I'm looking for opportunities and job offers, so feel free to reach out! My inbox is always open, and I’ll do my best to respond</p>
+        <p>Whether you have a question, want to collaborate, or just want to say hi — feel free to reach out! My inbox is always open, and I’ll do my best to respond.</p>
         <div class="flex justify-center">
             <a class="mail" target="_blank" href="mailto:ayxan110.dadashov@gmail.com">Say Hello</a>
         </div>
