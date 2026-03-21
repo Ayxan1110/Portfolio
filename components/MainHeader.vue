@@ -73,7 +73,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
         </ul>
-        <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">Resume</a>
+        <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">What's that? <span class="resume-arrow">↗</span></a>
       </div>
       <div ref="menuIconRef" class="menu-icon animate__animated animate__fadeIn" @click="toggleMenu" :class="{ 'open': isMenuOpen }">
         <div></div>
@@ -95,7 +95,7 @@ onUnmounted(() => {
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
           <div class="mt-24">
-            <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn">Resume</a>
+            <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn">What's that? ↗</a>
           </div>
         </ul>
       </div>
@@ -195,10 +195,36 @@ onUnmounted(() => {
   font-family: "SF Mono";
   color: var(--color);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  overflow: hidden;
 }
 
-.resume-btn:hover {
-  background-color: rgba(244, 50, 0, 0.1);
+.resume-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(244, 50, 0, 0.25);
+  transition: height 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: -1;
+}
+
+.resume-btn:hover::before {
+  height: 100%;
+}
+
+.resume-arrow {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.resume-btn:hover .resume-arrow {
+  transform: translate(3px, -3px);
 }
 
 .hamburger-menu {
