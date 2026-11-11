@@ -72,6 +72,9 @@ onUnmounted(() => {
           <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.45s;">
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
           </li>
+          <li class="animate__animated animate__fadeInDown nav-section" style="animation-delay: 0.55s;">
+            <a href="https://ayxan1110.github.io/" target="_blank"><span class="nums-header">05.</span> University</a>
+          </li>
         </ul>
         <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn animate__animated animate__fadeInDown" style="animation-delay: 0.6s;">What's that? <span class="resume-arrow">↗</span></a>
       </div>
@@ -93,6 +96,9 @@ onUnmounted(() => {
           </li>
           <li class="nav-section" @click="closeMenu">
             <a href="#contact"><span class="nums-header">04.</span> Contact</a>
+          </li>
+          <li class="nav-section" @click="closeMenu">
+            <a href="https://ayxan1110.github.io/" target="_blank"><span class="nums-header">05.</span> University</a>
           </li>
           <div class="mt-24">
             <a href="/AykhanDadashov_CV.pdf" target="_blank" class="resume-btn">What's that? ↗</a>
